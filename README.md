@@ -518,7 +518,7 @@ rm -rf frontend/.next && cd frontend && npm run dev
 ```
 
 ### "Indexed CGSpace abstracts"
-
+```
 curl -X POST http://localhost:8000/rag/ingest-cgspace \
   -H "Content-Type: application/json" \
   -d '{"project_id":"your-project","multi_query":true}'
@@ -546,7 +546,7 @@ For full multi-model runs: `PYTHONPATH=. python scripts/prepare_cmip6_gardian.py
 - Mekuria, W. et al. CGIAR CGSpace — indexed in LIRA-AI RAG knowledge base.
 
 ---
-## ✍️ Author
+## Author
 
 - **Jemal Ahmed**  
 - ✉️ **Contact:** [J.Ahmed@cgiar.org](mailto:J.Ahmed@cgiar.org)
