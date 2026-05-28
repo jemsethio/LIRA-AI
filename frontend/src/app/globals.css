@@ -1,0 +1,102 @@
+/* Leaflet CSS must come BEFORE @tailwind (PostCSS rule) */
+@import 'leaflet/dist/leaflet.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0f1923;
+  --surface: #1a2634;
+  --border: #2a3f52;
+}
+
+body {
+  background-color: var(--bg);
+  color: #e2e8f0;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Decision cockpit scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+/* Leaflet dark override */
+.leaflet-container { background: #1a2634 !important; }
+
+/* LIRA-AI map tooltip */
+.lira-tooltip {
+  background: #1a2634;
+  border: 1px solid #2a3f52;
+  color: #e2e8f0;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.lira-tooltip::before { display: none; }
+
+/* ── Phase 10: Accessibility ──────────────────────────────────── */
+
+/* Skip-to-main link */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 9999;
+  padding: 8px 16px;
+  background: #0f1923;
+  color: #9db8cc;
+  border: 2px solid #9db8cc;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: top 0.1s;
+}
+.skip-link:focus-visible {
+  top: 16px;
+}
+
+/* Universal focus ring — catches all focusable elements not explicitly styled */
+:focus-visible {
+  outline: 2px solid #9db8cc;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Leaflet container focus exception — suppress ring on map tiles */
+.leaflet-container:focus-visible {
+  outline: none;
+}
+
+/* sr-only backup (Tailwind purge safety) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Tooltip size fix — WCAG 1.4.4 minimum 12px informational */
+.lira-tooltip {
+  font-size: 12px;
+}
+
+/* Phase 11: Ethiopic font activation */
+:lang(am) {
+  font-family: var(--font-ethiopic), 'Noto Serif Ethiopic', serif;
+  line-height: 1.7;
+}
+:lang(am) h1, :lang(am) h2, :lang(am) h3, :lang(am) h4 {
+  line-height: 1.4;
+}
+:lang(am) .text-xs, :lang(am) .text-sm {
+  line-height: 1.6;
+}

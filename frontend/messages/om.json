@@ -1,0 +1,181 @@
+{
+  "a11y": {
+    "skipToMain": "Gara qabiyyee guddaa darbi",
+    "retryConnection": "Walquunnamtii irra deebi'i yaal",
+    "reviewQueue": "Tartiiba ilaali fi irra deebi'i yaal"
+  },
+  "nav": {
+    "primary": "Kallattii ijoo",
+    "open": "Kallattii bani",
+    "close": "Kallattii cufaa",
+    "siteFooter": "Miila marsariitii",
+    "contactEmail": "Jemal Ahmed CGIAR-tti quunnamaa",
+    "group": {
+      "core": "Hojii ijoo",
+      "analysis": "Xiinxala",
+      "planning": "Karoora",
+      "learning": "Barumsaa"
+    },
+    "items": {
+      "projects": "Pirojektiiwwan",
+      "advisory": "Gorsoota",
+      "dashboard": "Gabatee",
+      "evidence": "Maddeen ragaa",
+      "diagnosis": "Qoranno lafa",
+      "climate": "Fuula duraa haala qilleensaa",
+      "syndromes": "Mallattoowwan",
+      "pathways": "Karaalee deebisuu",
+      "investment": "Paaspoortii invastimantii",
+      "monitoring": "Hordoffii",
+      "tradeoffs": "Raadaariin jijjiirraa",
+      "policy": "Sirna polisii",
+      "community": "Ogummaa hawaasaa",
+      "knowledge": "Mana kitaabaa beekumsa",
+      "map": "Kaartaa lafaa",
+      "omoGhibe": "Laaboraatoorii jireenyaa Omo-Ghibe",
+      "setup": "Pirojektii haaraa",
+      "export": "Gabaasa ergaa",
+      "climateData": "Ragaa haala qilleensaa",
+      "mcpTools": "Meeshaalee MCP",
+      "agronomy": "Agronoomii",
+      "rangeland": "Lafa horsiisee bulaa"
+    }
+  },
+  "locale": {
+    "switcherLabel": "Afaan",
+    "label": {
+      "en": "English",
+      "am": "አማርኛ (Amharic)",
+      "om": "Afaan Oromoo (Oromo)"
+    }
+  },
+  "map": {
+    "layers": {
+      "lhii": "LHII",
+      "syndrome": "Mallattoo",
+      "ndvi": "NDVI",
+      "erosion": "Hophuu",
+      "rainfall": "Rooba"
+    },
+    "ndviYear": "Waggaa NDVI",
+    "exportGeoTiff": "GeoTIFF erguu",
+    "multiSelectHint": "Naannoolee tilmaamuuf Shift-cuqaasi",
+    "aggregateStats": "Mallattoolee Waliigesaa",
+    "aggregateZones": "Naannoolee Filataman",
+    "clearSelection": "Filannoowwan Haquuf",
+    "ndviSimulated": "Tarkaanfii NDVI kan 2023 Sentinel-2 irraa tilmaame",
+    "ndviSlider": "Sarara waggaa NDVI"
+  },
+  "chart": {
+    "dataTable": "Gabatee ragaa {title}",
+    "dataTableCaption": "Gatii ragaa deegarsa qaqqabummaa",
+    "ariaLabel": "{title} — {summary}"
+  },
+  "common": {
+    "loading": "Fe'aa jira…",
+    "error": "Rakkinni tokko uumame",
+    "errorDetail": "Ragaa fe'uu hin dandeenye. Fuula haaromsi ykn walquunnamtii kee mirkaneeffadhu.",
+    "reload": "Fuula haaromsi",
+    "noData": "Ragaa hin jiru",
+    "noDataDetail": "Ragaan madda hin fe'amneef kutaan kun agarsiifamuu hin danda'u.",
+    "online": "Onlaayinii",
+    "offline": "Oflaayinii",
+    "apiOnline": "API onlaayinii · karaalee {routes}",
+    "apiOffline": "API oflaayinii",
+    "apiConnecting": "Walquunnamsiisaa jira…",
+    "openOmoGhibe": "Omo-Ghibe bani",
+    "newProject": "Pirojektii haaraa",
+    "exportReport": "Gabaasa ergaa"
+  },
+  "dashboard": {
+    "title": "LIRA-AI",
+    "subtitle": "Ogummaa lafa deebisuu fi sirreeffamuuf",
+    "tagline": "Ogummaa tilmaama invastimantii lafa deebisuu · CGIAR MFL, CASP · Itoophiyaa",
+    "centralShift": {
+      "heading": "Jijjiirama guddaa",
+      "from": "\"Hir'ina lafa eessatti uumama?\"",
+      "to": "\"Maaliif lafa hir'ata, fuula dura maal ta'a, karaan deebisuu isa kamtu cimaa dha, eenyutu fayda argata ykn miidhama, fi tarkaanfiin kamtu jalqaba maallaqeeffamuu qaba?\"",
+      "arrow": "→"
+    },
+    "pipeline": {
+      "heading": "Sarara xiinxalaa",
+      "hint": "Modulii hundumaa banuuf cuqaasi"
+    },
+    "agentRoster": {
+      "heading": "Galmee wakiilota",
+      "empty": "Wakiilota ilaaluuf bakkee dura jalqabi"
+    },
+    "system": {
+      "heading": "Sirna",
+      "apiRoutes": "Karaalee API",
+      "pythonFiles": "Faayiloota Python",
+      "tests": "Qormaatawwan",
+      "epsg": "EPSG"
+    },
+    "basin": {
+      "heading": "Gaanfa Omo-Ghibe — Ragaa dhugaa (madda 7/7 mirkanaaye)",
+      "openLab": "Laaboraatoorii jireenyaa bani"
+    },
+    "dataSources": {
+      "heading": "Maddeewwan ragaa — Hundi dhugaa",
+      "cmip6Link": "CMIP6 + GARDIAN →"
+    }
+  },
+  "advisory": {
+    "title": "Gorsa hawaasaa",
+    "zone": "Naannoo",
+    "syndrome": "Mallattoo hir'ina lafa",
+    "priority": "Tarkaanfii dursa kennu",
+    "confidence": "Amanamummaa",
+    "loading": "Gorsa hawaasaa fe'aa jira…",
+    "error": "Gorsi fe'uu hin dandeenye. Walquunnamtii kee mirkaneeffadhu fi haaromsi.",
+    "empty": "Naannoo kanaaf gorsi hin jiru.",
+    "emptyDetail": "Gorsa ilaaluuf naannoo filadhu.",
+    "generateButton": "Gorsa uumi",
+    "downloadButton": "Kaardii gorsa buusi"
+  },
+  "omo": {
+    "title": "Laaboraatoorii jireenyaa Omo-Ghibe",
+    "zones": {
+      "highland": "Naannoo gara ol Kafa-Sheka",
+      "midland": "Naannoo giddugaleessa Dawro-Wolayita",
+      "lowland": "Naannoo gara gadii Omo Kibbaa",
+      "riverine": "Daandii laga Omo"
+    },
+    "syndromes": {
+      "deforestation": "Mancaasuu bosonaa",
+      "erosionProductivity": "Miidhaa hophuu-oomisha",
+      "rangelandOvergrazing": "Horsiisee bulaa daran dhiidhiessuu",
+      "reservoirSedimentation": "Baddiyyuu kuusaa bishaanii"
+    },
+    "indicators": {
+      "ndvi": "NDVI",
+      "soc": "SOC",
+      "rainfall": "Rooba"
+    }
+  },
+  "setup": {
+    "title": "Pirojektii haaraa",
+    "zonePlaceholder": "Naannoo filadhu",
+    "submitButton": "Xiinxala jalqabi",
+    "loading": "Pirojektii qopheessaa jira…",
+    "error": "Pirojektiin uumamuu hin dandeenye. Irra deebi'i yaalii."
+  },
+  "export": {
+    "pdfSectionHeading": "PDF Documents",
+    "advisoryCardTitle": "Community Advisory Card",
+    "advisoryCardDescription": "A5 bilingual card for field facilitators and farmers. Prints in colour or black-and-white.",
+    "downloadAdvisoryCard": "Download Advisory Card",
+    "policyBriefTitle": "Policy Brief",
+    "policyBriefDescription": "A4 formal brief for Ethiopian ministry officials (MoA, MoWIE, MoEFCC). CGIAR branding.",
+    "downloadPolicyBrief": "Download Policy Brief",
+    "investmentPassportTitle": "Investment Passport",
+    "investmentPassportDescription": "A4 GCF concept note format for development finance officers (GCF, LDCF, AF).",
+    "downloadInvestmentPassport": "Download Investment Passport",
+    "generatingPdf": "Generating PDF…",
+    "pdfError": "PDF could not be generated. Check your connection and try again.",
+    "pdfNoData": "No data available to export. Generate the analysis first.",
+    "noProjectHeading": "No analysis loaded",
+    "noProjectBody": "Run the analysis pipeline first, then return here to download your PDF documents."
+  }
+}

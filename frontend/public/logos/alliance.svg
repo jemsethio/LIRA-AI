@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 60" width="320" height="60">
+  <!-- Alliance of Bioversity International and CIAT brand colors: green + orange -->
+  <text x="0" y="22" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="900" fill="#6CC04A" letter-spacing="-0.3">Alliance</text>
+  <text x="0" y="38" font-family="Arial, Helvetica, sans-serif" font-size="9.5" font-weight="400" fill="rgba(255,255,255,0.85)" letter-spacing="0.2">of Bioversity International</text>
+  <text x="0" y="52" font-family="Arial, Helvetica, sans-serif" font-size="9.5" font-weight="400" fill="rgba(255,255,255,0.85)" letter-spacing="0.2">and CIAT</text>
+  <!-- Decorative leaf icon -->
+  <g transform="translate(183, 8)">
+    <ellipse cx="20" cy="22" rx="18" ry="11" fill="none" stroke="#6CC04A" stroke-width="1.5" transform="rotate(-35 20 22)"/>
+    <ellipse cx="20" cy="22" rx="18" ry="11" fill="none" stroke="#F7941D" stroke-width="1.5" transform="rotate(10 20 22)"/>
+  </g>
+</svg>

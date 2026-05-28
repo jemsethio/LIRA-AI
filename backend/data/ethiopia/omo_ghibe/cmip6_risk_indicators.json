@@ -1,0 +1,92 @@
+{
+  "scenarios": {
+    "ssp245": {
+      "2030": {
+        "rainfall_intensity_risk": 0.2,
+        "drought_dry_spell_risk": 0.0,
+        "heat_stress_risk": 0.146,
+        "soil_moisture_stress": 0.0,
+        "erosion_runoff_risk": 0.0,
+        "vegetation_stress": 0.073,
+        "restoration_suitability_stress": 0.04,
+        "overall_climate_risk_score": 0.069,
+        "scenario": "ssp245",
+        "year": 2030,
+        "is_real": true
+      },
+      "2050": {
+        "rainfall_intensity_risk": 0.2,
+        "drought_dry_spell_risk": 0.321,
+        "heat_stress_risk": 0.269,
+        "soil_moisture_stress": 0.0,
+        "erosion_runoff_risk": 0.0,
+        "vegetation_stress": 0.295,
+        "restoration_suitability_stress": 0.168,
+        "overall_climate_risk_score": 0.158,
+        "scenario": "ssp245",
+        "year": 2050,
+        "is_real": true
+      },
+      "2070": {
+        "rainfall_intensity_risk": 0.2,
+        "drought_dry_spell_risk": 0.0,
+        "heat_stress_risk": 0.069,
+        "soil_moisture_stress": 0.0,
+        "erosion_runoff_risk": 0.0,
+        "vegetation_stress": 0.034,
+        "restoration_suitability_stress": 0.04,
+        "overall_climate_risk_score": 0.054,
+        "scenario": "ssp245",
+        "year": 2070,
+        "is_real": true
+      }
+    },
+    "ssp585": {
+      "2030": {
+        "rainfall_intensity_risk": 0.2,
+        "drought_dry_spell_risk": 0.0,
+        "heat_stress_risk": 0.037,
+        "soil_moisture_stress": 0.0,
+        "erosion_runoff_risk": 0.0,
+        "vegetation_stress": 0.019,
+        "restoration_suitability_stress": 0.04,
+        "overall_climate_risk_score": 0.047,
+        "scenario": "ssp585",
+        "year": 2030,
+        "is_real": true
+      },
+      "2050": {
+        "rainfall_intensity_risk": 0.2,
+        "drought_dry_spell_risk": 0.275,
+        "heat_stress_risk": 0.193,
+        "soil_moisture_stress": 0.0,
+        "erosion_runoff_risk": 0.0,
+        "vegetation_stress": 0.234,
+        "restoration_suitability_stress": 0.15,
+        "overall_climate_risk_score": 0.134,
+        "scenario": "ssp585",
+        "year": 2050,
+        "is_real": true
+      },
+      "2070": {
+        "rainfall_intensity_risk": 0.2,
+        "drought_dry_spell_risk": 0.0,
+        "heat_stress_risk": 0.507,
+        "soil_moisture_stress": 0.0,
+        "erosion_runoff_risk": 0.0,
+        "vegetation_stress": 0.254,
+        "restoration_suitability_stress": 0.04,
+        "overall_climate_risk_score": 0.141,
+        "scenario": "ssp585",
+        "year": 2070,
+        "is_real": true
+      }
+    }
+  },
+  "meta": {
+    "description": "LIRA-AI climate risk indicators (0=low, 1=high) derived from CMIP6",
+    "basin": "Omo-Ghibe",
+    "source": "nasa-nex-gddp-cmip6 \u2014 Microsoft Planetary Computer",
+    "generated_at": "2026-05-08T17:13:42.974008"
+  }
+}

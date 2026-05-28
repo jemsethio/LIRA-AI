@@ -1,0 +1,118 @@
+{
+  "type": "FeatureCollection",
+  "name": "Omo-Ghibe Basin — LIRA-AI MFL Living Lab",
+  "metadata": {
+    "description": "Omo-Ghibe River Basin, southwestern Ethiopia. Major CGIAR MFL Living Lab site.",
+    "country": "Ethiopia",
+    "basin": "Omo-Ghibe",
+    "major_river": "Omo River (flows south to Lake Turkana)",
+    "area_km2_approx": 79000,
+    "bbox": [33.0, 3.0, 42.0, 10.0],
+    "elevation_range_m": "350–3350",
+    "agro_ecological_zones": ["Highland forest (Kafa-Sheka)", "Mid-elevation mixed crop-livestock", "Lowland agropastoral", "Riverine and floodplain"],
+    "admin_regions": ["SNNPR", "Oromia", "Sidama"],
+    "data_source": "Simplified representation — use HydroSHEDS for production boundary",
+    "lira_ai_use": "Basin-level landscape diagnosis and investment planning"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Omo-Ghibe Basin — Full extent",
+        "zone": "full_basin",
+        "landscape_type": "watershed",
+        "area_ha": 7900000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [33.5, 3.5], [34.5, 3.2], [35.5, 3.0], [36.5, 3.4],
+          [37.5, 3.8], [38.5, 4.5], [39.0, 5.5], [39.5, 6.5],
+          [39.8, 7.5], [40.0, 8.5], [39.5, 9.2], [38.5, 9.8],
+          [37.5, 10.0],[36.5, 9.8], [35.5, 9.5], [34.5, 9.0],
+          [33.8, 8.0], [33.3, 7.0], [33.0, 6.0], [33.2, 5.0],
+          [33.5, 3.5]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kafa-Sheka Highland Zone",
+        "zone": "highland",
+        "landscape_type": "watershed",
+        "elevation_range_m": "1800–3350",
+        "area_ha": 1200000,
+        "primary_land_use": "Forest-coffee agroforestry / subsistence crop-livestock",
+        "dominant_syndrome": "deforestation_vegetation_loss"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [35.5, 6.8], [36.2, 6.5], [36.8, 7.0], [37.2, 7.8],
+          [37.0, 8.5], [36.2, 9.0], [35.5, 8.8], [35.0, 8.0],
+          [35.2, 7.2], [35.5, 6.8]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mid-Elevation Mixed Zone (Dawro-Wolayita)",
+        "zone": "midland",
+        "landscape_type": "watershed",
+        "elevation_range_m": "1000–1800",
+        "area_ha": 2100000,
+        "primary_land_use": "Mixed crop-livestock / enset-based farming",
+        "dominant_syndrome": "erosion_productivity_decline"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [37.0, 6.0], [37.8, 5.8], [38.5, 6.2], [38.8, 7.0],
+          [38.2, 7.8], [37.2, 7.8], [36.8, 7.0], [37.0, 6.0]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lowland Agropastoral Zone (South Omo)",
+        "zone": "lowland_pastoral",
+        "landscape_type": "rangeland",
+        "elevation_range_m": "350–1000",
+        "area_ha": 2800000,
+        "primary_land_use": "Pastoralism / agropastoralism",
+        "dominant_syndrome": "rangeland_overgrazing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [35.5, 3.5], [37.0, 3.2], [38.5, 4.0], [38.8, 5.0],
+          [38.5, 6.2], [37.8, 5.8], [37.0, 6.0], [36.0, 5.5],
+          [35.0, 4.5], [35.5, 3.5]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Omo River Corridor and Floodplain",
+        "zone": "riverine",
+        "landscape_type": "reservoir_catchment",
+        "elevation_range_m": "350–700",
+        "area_ha": 450000,
+        "primary_land_use": "Irrigated agriculture / riverine pastoralism",
+        "dominant_syndrome": "reservoir_sedimentation"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [36.0, 4.0], [36.5, 3.5], [37.5, 3.8], [38.0, 4.5],
+          [37.8, 5.5], [37.0, 6.0], [36.0, 5.5], [35.5, 4.8],
+          [36.0, 4.0]
+        ]]
+      }
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "a11y": {
+    "skipToMain": "ወደ ዋና ይዘት ዝለል",
+    "retryConnection": "ግንኙነት እንደገና ሞክር",
+    "reviewQueue": "ወረፋ ይፈትሹ እና እንደገና ሞክሩ"
+  },
+  "nav": {
+    "primary": "ዋና ማሰሻ",
+    "open": "ማሰሻ ክፈት",
+    "close": "ማሰሻ ዝጋ",
+    "siteFooter": "የጣቢያ ግርጌ",
+    "contactEmail": "ጀማል አህመድን በ CGIAR ያግኙ",
+    "group": {
+      "core": "ዋና ሂደት",
+      "analysis": "ትንተና",
+      "planning": "እቅድ",
+      "learning": "ትምህርት"
+    },
+    "items": {
+      "projects": "ፕሮጀክቶች",
+      "advisory": "ምክሮች",
+      "dashboard": "ዳሽቦርድ",
+      "evidence": "የማስረጃ ደመና",
+      "diagnosis": "የመሬት ምርመራ",
+      "climate": "የአየር ንብረት ወደፊት",
+      "syndromes": "ሲንድሮሞች",
+      "pathways": "የማገገሚያ መንገዶች",
+      "investment": "የኢንቨስትመንት ፓስፖርቶች",
+      "monitoring": "ክትትል",
+      "tradeoffs": "የስምምነት ራዳር",
+      "policy": "የፖሊሲ አሰላለፍ",
+      "community": "የማህበረሰብ ብልሃት",
+      "knowledge": "የእውቀት ቤተ-መጻህፍት",
+      "map": "ቦታዊ ካርታ",
+      "omoGhibe": "የኦሞ-ጊቤ ሕያው ላቦራቶሪ",
+      "setup": "አዲስ ፕሮጀክት",
+      "export": "ሪፖርት ላክ",
+      "climateData": "የአየር ንብረት ዳታ",
+      "mcpTools": "MCP መሳሪያዎች",
+      "agronomy": "አግሮኖሚ",
+      "rangeland": "የግጦሽ መሬት"
+    }
+  },
+  "locale": {
+    "switcherLabel": "ቋንቋ",
+    "label": {
+      "en": "English",
+      "am": "አማርኛ (Amharic)",
+      "om": "Afaan Oromoo (Oromo)"
+    }
+  },
+  "map": {
+    "layers": {
+      "lhii": "LHII",
+      "syndrome": "ሲንድሮም",
+      "ndvi": "NDVI",
+      "erosion": "መሸርሸር",
+      "rainfall": "ዝናብ"
+    },
+    "ndviYear": "NDVI ዓመት",
+    "exportGeoTiff": "GeoTIFF ላክ",
+    "multiSelectHint": "ዞኖችን ለማወዳደር Shift-ተጫን",
+    "aggregateStats": "ጠቅላላ አመልካቾች",
+    "aggregateZones": "የተመረጡ ዞኖች",
+    "clearSelection": "ምርጫ አጥፋ",
+    "ndviSimulated": "NDVI አዝማሚያ ከ2023 Sentinel-2 መነሻ ተቀምጧል",
+    "ndviSlider": "NDVI ዓመት ተንሸራሻሪ"
+  },
+  "chart": {
+    "dataTable": "{title} ዳታ ሠንጠረዥ",
+    "dataTableCaption": "ለተደራሽነት የዳታ እሴቶች",
+    "ariaLabel": "{title} — {summary}"
+  },
+  "common": {
+    "loading": "በመጫን ላይ…",
+    "error": "የሆነ ችግር ተፈጥሯል",
+    "errorDetail": "ዳታ ሊጫን አልቻለም። ገጹን ዳግም ያስጀምሩ ወይም ግንኙነትዎን ያረጋግጡ።",
+    "reload": "ገጽ ዳግም አስጀምር",
+    "noData": "ምንም ዳታ የለም",
+    "noDataDetail": "ምንጭ ዳታ ስላልተጫነ ይህ ክፍል ሊታይ አይችልም።",
+    "online": "ኦንላይን",
+    "offline": "ኦፍላይን",
+    "apiOnline": "API ኦንላይን · {routes} መንገዶች",
+    "apiOffline": "API ኦፍላይን",
+    "apiConnecting": "በማገናኘት ላይ…",
+    "openOmoGhibe": "ኦሞ-ጊቤን ክፈት",
+    "newProject": "አዲስ ፕሮጀክት",
+    "exportReport": "ሪፖርት ላክ"
+  },
+  "dashboard": {
+    "title": "LIRA-AI",
+    "subtitle": "ለማገገም እና መላመድ የመሬት ብልሃት",
+    "tagline": "ለሊዝ ያስችላል መሬት ማገገሚያ ትንበያ ብልሃት · CGIAR MFL, CASP · ኢትዮጵያ",
+    "centralShift": {
+      "heading": "ዋናው ለውጥ",
+      "from": "\"መሬት መዳከም የት ይከሰታል?\"",
+      "to": "\"ለምን መሬቱ ይዳከማል፣ ወደፊት ምን ይሆናል፣ ምን የማገገሚያ ሂደት ጠንካራ ነው፣ ማን ጠቀሜታ ወይም ኪሳራ ያደርሳል፣ እና ምን ዕርምጃ ቅድሚያ ሊሰጠው ይገባል?\"",
+      "arrow": "→"
+    },
+    "pipeline": {
+      "heading": "የትንተና ቧንቧ መስመር",
+      "hint": "እያንዳንዱን ሞዱል ለመክፈት ጠቅ ያድርጉ"
+    },
+    "agentRoster": {
+      "heading": "የወኪሎች ዝርዝር",
+      "empty": "ወኪሎችን ለማየት ዳሪን ጀምሩ"
+    },
+    "system": {
+      "heading": "ስርዓት",
+      "apiRoutes": "API መንገዶች",
+      "pythonFiles": "Python ፋይሎች",
+      "tests": "ሙከራዎች",
+      "epsg": "EPSG"
+    },
+    "basin": {
+      "heading": "የኦሞ-ጊቤ ተፋሰስ — እውነተኛ ዳታ (7/7 ምንጮች ተረጋግጠዋል)",
+      "openLab": "ሕያው ላቦራቶሪ ክፈት"
+    },
+    "dataSources": {
+      "heading": "የዳታ ምንጮች — ሁሉም እውነተኛ",
+      "cmip6Link": "CMIP6 + GARDIAN →"
+    }
+  },
+  "advisory": {
+    "title": "የማህበረሰብ ምክር",
+    "zone": "ዞን",
+    "syndrome": "የመሬት መዳከም ሲንድሮም",
+    "priority": "ቅድሚያ ዕርምጃ",
+    "confidence": "እምነት",
+    "loading": "የማህበረሰብ ምክር በመጫን ላይ…",
+    "error": "ምክሩ ሊጫን አልቻለም። ግንኙነትዎን ያረጋግጡ እና ዳግም ያስጀምሩ።",
+    "empty": "ለዚህ ዞን ምንም ምክር የለም።",
+    "emptyDetail": "ምክሩን ለማየት ዞን ይምረጡ።",
+    "generateButton": "ምክር አዘጋጅ",
+    "downloadButton": "ምክር ካርድ አውርድ"
+  },
+  "omo": {
+    "title": "የኦሞ-ጊቤ ሕያው ላቦራቶሪ",
+    "zones": {
+      "highland": "ካፋ-ሸካ ደጋ",
+      "midland": "ዳውሮ-ወላይታ ማዕከላዊ",
+      "lowland": "ደቡብ ኦሞ ቆላ",
+      "riverine": "የኦሞ ወንዝ ኮሪደር"
+    },
+    "syndromes": {
+      "deforestation": "ደን መጨፍጨፍ",
+      "erosionProductivity": "የመሸርሸር-ምርታማነት ኪሳራ",
+      "rangelandOvergrazing": "የግጦሽ መሬት ከመጠን ያለፈ ግጦሽ",
+      "reservoirSedimentation": "የማጠራቀሚያ ደለል"
+    },
+    "indicators": {
+      "ndvi": "NDVI",
+      "soc": "SOC",
+      "rainfall": "ዝናብ"
+    }
+  },
+  "setup": {
+    "title": "አዲስ ፕሮጀክት",
+    "zonePlaceholder": "ዞን ይምረጡ",
+    "submitButton": "ትንተና ጀምር",
+    "loading": "ፕሮጀክት በማዘጋጀት ላይ…",
+    "error": "ፕሮጀክቱ ሊፈጠር አልቻለም። እንደገና ይሞክሩ።"
+  },
+  "export": {
+    "pdfSectionHeading": "PDF Documents",
+    "advisoryCardTitle": "Community Advisory Card",
+    "advisoryCardDescription": "A5 bilingual card for field facilitators and farmers. Prints in colour or black-and-white.",
+    "downloadAdvisoryCard": "Download Advisory Card",
+    "policyBriefTitle": "Policy Brief",
+    "policyBriefDescription": "A4 formal brief for Ethiopian ministry officials (MoA, MoWIE, MoEFCC). CGIAR branding.",
+    "downloadPolicyBrief": "Download Policy Brief",
+    "investmentPassportTitle": "Investment Passport",
+    "investmentPassportDescription": "A4 GCF concept note format for development finance officers (GCF, LDCF, AF).",
+    "downloadInvestmentPassport": "Download Investment Passport",
+    "generatingPdf": "Generating PDF…",
+    "pdfError": "PDF could not be generated. Check your connection and try again.",
+    "pdfNoData": "No data available to export. Generate the analysis first.",
+    "noProjectHeading": "No analysis loaded",
+    "noProjectBody": "Run the analysis pipeline first, then return here to download your PDF documents."
+  }
+}

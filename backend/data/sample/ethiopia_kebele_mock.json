@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "description": "Mock landscape indicator dataset for Tigray/Amhara Highland kebele — Ethiopia use case",
+    "source": "LIRA-AI MVP mock data — NOT real measurements",
+    "landscape_type": "watershed",
+    "country": "Ethiopia",
+    "region": "Amhara",
+    "admin_level": "kebele",
+    "approximate_area_ha": 4200,
+    "elevation_range_m": "1800–2600",
+    "agro_ecological_zone": "Sub-humid highland",
+    "primary_land_use": "Mixed crop-livestock"
+  },
+  "boundary": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [38.45, 11.55],
+        [38.52, 11.55],
+        [38.52, 11.61],
+        [38.45, 11.61],
+        [38.45, 11.55]
+      ]]
+    },
+    "properties": {
+      "name": "Mock Kebele — Amhara Highland",
+      "woreda": "Mock Woreda",
+      "region": "Amhara"
+    }
+  },
+  "indicators": {
+    "project_id": "MOCK-ETH-001",
+    "soil_loss_rate_t_ha_yr": 32.5,
+    "soil_moisture_pct": 38,
+    "soil_organic_carbon_g_per_kg": 14.2,
+    "soil_texture": "clay-loam",
+    "land_productivity_index": 0.31,
+    "ndvi_mean": 0.28,
+    "evi_mean": 0.22,
+    "ndvi_trend_5yr": -0.03,
+    "slope_mean_degrees": 18,
+    "flow_accumulation": 1250,
+    "land_cover_change_pct_10yr": 15.4,
+    "forest_cover_pct": 8.2,
+    "bare_soil_pct": 22.1,
+    "rainfall_mm_annual": 680,
+    "temperature_mean_c": 19.5,
+    "dry_spell_days_per_year": 45,
+    "drought_frequency_per_decade": 3,
+    "overgrazing_proxy": 0.68,
+    "reservoir_sedimentation_proxy": 0.55,
+    "is_mock": true
+  },
+  "community_context": {
+    "community_preferred_future": "Improved food security with maintained grazing access",
+    "local_degradation_memory": "Elders report forest cover loss since 1980s; rills and gullies increasing since 2010",
+    "grazing_rules": "Communal grazing on hillsides; seasonal closure agreements partly enforced",
+    "labor_constraints": "High seasonal out-migration of youth; women bear water and fuelwood collection burden",
+    "gendered_burdens": "Women spend 3-4 hours/day on fuelwood and water collection",
+    "youth_opportunities": "Nursery and tree seedling enterprise could engage youth",
+    "local_conflict_risks": "Boundary disputes with neighbouring kebele over grazing land",
+    "tenure_constraints": "Hillside land has unclear tenure between forest authority and households",
+    "restoration_preferences": ["Soil bunds", "Tree planting", "Area closure with fodder access"],
+    "adoption_barriers": ["Labor shortage", "Maintenance cost uncertainty", "Lack of market for NTFPs"],
+    "local_success_indicators": ["Visible green cover increase", "Reduced rill density", "Improved spring flow"]
+  }
+}

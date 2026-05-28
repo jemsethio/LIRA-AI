@@ -1,0 +1,339 @@
+---
+# LIRA-AI Ethiopia Data Registry — Omo-Ghibe Living Lab
+# Based on: LIRA_AI_Ethiopia_Data_Sources_Catalogue.md
+# Tiered by MVP readiness: tier1=operational, tier2=analytical, tier3=context
+
+basin: Omo-Ghibe River Basin
+country: Ethiopia
+bbox: [33.0, 3.0, 42.0, 10.0]
+
+sources:
+
+  # ── TIER 1: MVP Operational Layer ─────────────────────────────────────────
+
+  - dataset_id: sentinel2_l2a
+    name: Sentinel-2 L2A
+    organization: ESA Copernicus / Microsoft
+    url: https://planetarycomputer.microsoft.com/dataset/sentinel-2-l2a
+    theme: [vegetation, land_cover, productivity]
+    data_type: raster
+    coverage:
+      spatial: Omo-Ghibe basin and sub-zones
+      temporal: "2017–present, 5-day revisit"
+      resolution: 10m (B04/B08 for NDVI)
+    lira_ai_indicator: [ndvi_mean, evi_mean, land_cover_change]
+    lira_ai_agent: [LandscapeEvidenceAgent, VegetationBiodiversityAgent]
+    priority_tier: 1
+    access: {cost: free, registration_required: false, request_required: false}
+    integration_status: connected_epsg4326_required
+    quality_notes: CRS must be specified as epsg=4326 for stackstac. Use 100m resolution for basin-scale.
+    validation_status: verified
+    last_checked: "2026-05-08"
+
+  - dataset_id: cop_dem_glo30
+    name: Copernicus DEM GLO-30
+    organization: ESA Copernicus / Microsoft
+    url: https://planetarycomputer.microsoft.com/dataset/cop-dem-glo-30
+    theme: [topography, hydrology]
+    data_type: raster
+    coverage:
+      spatial: Global
+      temporal: Static (2011-2015 acquisition)
+      resolution: 30m
+    lira_ai_indicator: [slope_mean_degrees, elevation_mean_m, relief_m]
+    lira_ai_agent: [LandscapeEvidenceAgent, WaterDoctorAgent, SoilDoctorAgent]
+    priority_tier: 1
+    access: {cost: free, registration_required: false, request_required: false}
+    integration_status: connected_epsg4326_required
+    validation_status: verified
+    last_checked: "2026-05-08"
+
+  - dataset_id: esa_worldcover_2021
+    name: ESA WorldCover 2021 (10m)
+    organization: ESA / VITO
+    url: https://planetarycomputer.microsoft.com/dataset/esa-worldcover
+    theme: [land_cover]
+    data_type: raster
+    coverage:
+      spatial: Global
+      temporal: "2020, 2021"
+      resolution: 10m
+    lira_ai_indicator: [forest_cover_pct, bare_soil_pct, cropland_pct, grassland_pct]
+    lira_ai_agent: [LandscapeEvidenceAgent, VegetationBiodiversityAgent]
+    priority_tier: 1
+    access: {cost: free, registration_required: false, request_required: false}
+    integration_status: connected_rescale_false_required
+    quality_notes: Pass rescale=False and dtype=uint8 to stackstac to avoid casting error.
+    validation_status: verified
+    last_checked: "2026-05-08"
+
+  - dataset_id: soilgrids_v2
+    name: SoilGrids v2.0
+    organization: ISRIC World Soil Information
+    url: https://rest.isric.org/soilgrids/v2.0/
+    theme: [soil]
+    data_type: raster_api
+    coverage:
+      spatial: Global (point queries via REST API)
+      temporal: Static (trained 2010-2020 profile database)
+      resolution: 250m
+    lira_ai_indicator: [soil_organic_carbon_g_per_kg, clay_pct, silt_pct, sand_pct, ph, bulk_density_g_cm3]
+    lira_ai_agent: [SoilDoctorAgent, LandscapeEvidenceAgent]
+    priority_tier: 1
+    access: {cost: free, registration_required: false, request_required: false}
+    integration_status: operational_real_data_confirmed
+    quality_notes: >
+      Do NOT include depth= in URL — query all depths and filter locally.
+      d_factor from unit_measure must be applied: soc d_factor=10 (dg/kg->g/kg),
+      clay/silt/sand d_factor=10 (g/kg->%), phh2o d_factor=10 (pH*10->pH).
+      Real SOC values confirmed: Highland=58.6, Midland=43.1, Lowland=28.2, Riverine=67.9 g/kg.
+    validation_status: verified_real_data
+    last_checked: "2026-05-08"
+
+  - dataset_id: modis_mod13q1
+    name: MODIS MOD13Q1 v061 (16-day NDVI)
+    organization: NASA LP DAAC / Microsoft
+    url: https://planetarycomputer.microsoft.com/dataset/modis-13Q1-061
+    theme: [vegetation, productivity]
+    data_type: raster
+    coverage:
+      spatial: Global
+      temporal: "2000–present, 16-day composites"
+      resolution: 250m
+    lira_ai_indicator: [land_productivity_index, ndvi_trend]
+    lira_ai_agent: [LandscapeEvidenceAgent, VegetationBiodiversityAgent]
+    priority_tier: 1
+    access: {cost: free, registration_required: false, request_required: false}
+    integration_status: connected_epsg4326_required
+    validation_status: verified
+    last_checked: "2026-05-08"
+
+  - dataset_id: gadm_ethiopia
+    name: GADM Ethiopia Administrative Boundaries
+    organization: GADM
+    url: https://gadm.org/maps/ETH.html
+    theme: [admin, baseline]
+    data_type: vector
+    coverage:
+      spatial: Ethiopia (all admin levels)
+      temporal: Static
+      resolution: Vector (kebele, woreda, zone, region)
+    lira_ai_indicator: [admin_boundary]
+    lira_ai_agent: [LandscapeEvidenceAgent]
+    priority_tier: 1
+    access: {cost: free, registration_required: false, request_required: false}
+    integration_status: to_implement
+    validation_status: unverified
+    last_checked: "2026-05-08"
+
+  - dataset_id: hdx_ethiopia
+    name: Humanitarian Data Exchange — Ethiopia
+    organization: OCHA Centre for Humanitarian Data
+    url: https://data.humdata.org/group/eth
+    theme: [socioeconomic, admin, infrastructure]
+    data_type: vector_tabular
+    coverage:
+      spatial: Ethiopia
+      temporal: Updated regularly
+      resolution: Admin level
+    lira_ai_indicator: [population_exposure, road_access, beneficiaries]
+    lira_ai_agent: [InvestmentPlanningAgent, CommunityIntelligenceAgent]
+    priority_tier: 1
+    access: {cost: free, registration_required: false, request_required: false}
+    integration_status: to_implement
+    validation_status: unverified
+    last_checked: "2026-05-08"
+
+  # ── TIER 2: Analytical Model Layer ────────────────────────────────────────
+
+  - dataset_id: chirps_v2
+    name: CHIRPS v2.0 Daily Rainfall
+    organization: CHC/UCSB
+    url: https://planetarycomputer.microsoft.com/dataset/chirps-2.0
+    theme: [climate, drought]
+    data_type: raster
+    coverage:
+      spatial: 50°S–50°N
+      temporal: "1981–near present, daily"
+      resolution: "0.05° (~5.5km)"
+    lira_ai_indicator: [rainfall_mm_annual, rainfall_trend, drought_frequency]
+    lira_ai_agent: [ClimateFuturesAgent, WaterDoctorAgent]
+    priority_tier: 2
+    access: {cost: free, registration_required: false, request_required: false}
+    integration_status: connected_in_pc_adapter
+    quality_notes: Ideal for LIRA-AI trend analysis — 40+ year record covers all drought events in Omo-Ghibe.
+    validation_status: verified
+    last_checked: "2026-05-08"
+
+  - dataset_id: era5_land
+    name: ERA5-Land Climate Reanalysis
+    organization: ECMWF Copernicus
+    url: https://planetarycomputer.microsoft.com/dataset/era5-pds
+    theme: [climate]
+    data_type: raster
+    coverage:
+      spatial: Global
+      temporal: "1950–present, hourly"
+      resolution: "0.1° (~11km)"
+    lira_ai_indicator: [temperature_mean_c, soil_moisture_pct, evapotranspiration]
+    lira_ai_agent: [ClimateFuturesAgent, WaterDoctorAgent]
+    priority_tier: 2
+    access: {cost: free, registration_required: false, request_required: false}
+    integration_status: connected_in_pc_adapter
+    validation_status: verified
+    last_checked: "2026-05-08"
+
+  - dataset_id: fews_net_eth
+    name: FEWS NET East Africa Data Portal
+    organization: USGS / USAID
+    url: https://earlywarning.usgs.gov/fews/search/Africa/East%20Africa
+    theme: [drought, food_security]
+    data_type: webmap_raw
+    coverage:
+      spatial: East Africa / Ethiopia
+      temporal: Near-real-time and historical
+      resolution: Dekadal/monthly
+    lira_ai_indicator: [drought_severity, soil_moisture, rainfall_anomaly, ipc_phase]
+    lira_ai_agent: [ClimateFuturesAgent, RangelandLivestockAgent]
+    priority_tier: 2
+    access: {cost: free, registration_required: false, request_required: false}
+    integration_status: partial_api_endpoint_unstable
+    quality_notes: IPC phase endpoint changed — use fdw.fews.net/api/ipcphase/?country_code=ET
+    validation_status: unverified
+    last_checked: "2026-05-08"
+
+  - dataset_id: icpac_drought
+    name: ICPAC Drought and Climate Maps
+    organization: IGAD / ICPAC
+    url: https://icpac.maps.arcgis.com/home/index.html
+    theme: [drought, vegetation, rangeland]
+    data_type: webmap
+    coverage:
+      spatial: East Africa including Ethiopia
+      temporal: Monthly updates
+      resolution: Regional
+    lira_ai_indicator: [ndvi_anomaly, spi, rainfall_anomaly, rangeland_drought]
+    lira_ai_agent: [ClimateFuturesAgent, RangelandLivestockAgent]
+    priority_tier: 2
+    access: {cost: free, registration_required: false, request_required: false}
+    integration_status: to_implement
+    validation_status: unverified
+    last_checked: "2026-05-08"
+
+  - dataset_id: hydrosheds
+    name: HydroSHEDS Hydrological Datasets
+    organization: HydroSHEDS
+    url: https://www.hydrosheds.org/
+    theme: [hydrology, topography]
+    data_type: raster_vector
+    coverage:
+      spatial: Global
+      temporal: Static (SRTM-derived)
+      resolution: "15s (~500m) and 3s (~90m)"
+    lira_ai_indicator: [flow_accumulation, watershed_boundary, drainage_direction]
+    lira_ai_agent: [WaterDoctorAgent, LandscapeEvidenceAgent]
+    priority_tier: 2
+    access: {cost: free, registration_required: false, request_required: false}
+    integration_status: to_implement
+    quality_notes: Critical for Omo-Ghibe sub-watershed delineation and sediment connectivity analysis.
+    validation_status: unverified
+    last_checked: "2026-05-08"
+
+  - dataset_id: glsem_esdac
+    name: Global Soil Erosion Modelling Platform (GloSEM)
+    organization: JRC / ESDAC
+    url: https://esdac.jrc.ec.europa.eu/content/global-soil-erosion
+    theme: [soil, erosion]
+    data_type: raster
+    coverage:
+      spatial: Global
+      temporal: "2001, 2012"
+      resolution: "~250m"
+    lira_ai_indicator: [soil_loss_rate_t_ha_yr]
+    lira_ai_agent: [SoilDoctorAgent]
+    priority_tier: 2
+    access: {cost: free, registration_required: true, request_required: true}
+    integration_status: to_implement
+    quality_notes: Requires access request to ESDAC. Provides RUSLE-based global erosion estimates.
+    validation_status: unverified
+    last_checked: "2026-05-08"
+
+  # ── TIER 3: Context and Validation ────────────────────────────────────────
+
+  - dataset_id: sedac_gpw
+    name: Gridded Population of the World (GPW v4)
+    organization: NASA SEDAC / CIESIN
+    url: https://sedac.ciesin.columbia.edu/data/collection/gpw-v4
+    theme: [socioeconomic]
+    data_type: raster
+    coverage:
+      spatial: Global
+      temporal: "2000, 2005, 2010, 2015, 2020"
+      resolution: "~1km"
+    lira_ai_indicator: [population_exposure, beneficiaries]
+    lira_ai_agent: [InvestmentPlanningAgent]
+    priority_tier: 3
+    access: {cost: free, registration_required: true, request_required: false}
+    integration_status: to_implement
+    validation_status: unverified
+    last_checked: "2026-05-08"
+
+  - dataset_id: grand_dams
+    name: Global Reservoir and Dam Database (GRanD)
+    organization: NASA SEDAC
+    url: https://sedac.ciesin.columbia.edu/data/set/grand-v1-dams-rev01
+    theme: [hydrology, infrastructure]
+    data_type: vector
+    coverage:
+      spatial: Global
+      temporal: Static
+      resolution: Point features
+    lira_ai_indicator: [reservoir_sedimentation_proxy]
+    lira_ai_agent: [WaterDoctorAgent, InvestmentPlanningAgent]
+    priority_tier: 3
+    access: {cost: free, registration_required: true, request_required: false}
+    quality_notes: Critical for Gibe III dam context in Omo-Ghibe downstream analysis.
+    integration_status: to_implement
+    validation_status: unverified
+    last_checked: "2026-05-08"
+
+  - dataset_id: noaa_star_vh
+    name: NOAA STAR Global Vegetation Health Products
+    organization: NOAA
+    url: https://www.star.nesdis.noaa.gov/smcd/emb/vci/VH/vh_browse.php
+    theme: [vegetation, drought]
+    data_type: raster
+    coverage:
+      spatial: Global
+      temporal: "1982–present, weekly"
+      resolution: "~4km (AVHRR-based)"
+    lira_ai_indicator: [vci, vhi, drought_severity]
+    lira_ai_agent: [VegetationBiodiversityAgent, ClimateFuturesAgent]
+    priority_tier: 3
+    access: {cost: free, registration_required: false, request_required: false}
+    integration_status: to_implement
+    validation_status: unverified
+    last_checked: "2026-05-08"
+
+metadata_template: |
+  dataset_id:
+  name:
+  organization:
+  url:
+  theme: [drought, vegetation, soil, climate, land_cover, socioeconomic, admin, hydrology]
+  data_type: webmap | raw_data | raster | vector | table | api
+  coverage:
+    spatial:
+    temporal:
+    resolution:
+  lira_ai_indicator: []
+  lira_ai_agent: []
+  priority_tier: 1|2|3
+  access:
+    cost: free | paid
+    registration_required: true|false
+    request_required: true|false
+  integration_status: operational | connected | to_implement | partial
+  quality_notes:
+  validation_status: unverified | verified | locally_validated
+  last_checked: YYYY-MM-DD

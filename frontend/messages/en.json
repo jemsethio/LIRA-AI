@@ -1,0 +1,188 @@
+{
+  "a11y": {
+    "skipToMain": "Skip to main content",
+    "retryConnection": "Retry connection",
+    "reviewQueue": "Review queue and retry"
+  },
+  "nav": {
+    "primary": "Primary navigation",
+    "open": "Open navigation",
+    "close": "Close navigation",
+    "siteFooter": "Site footer",
+    "contactEmail": "Contact Jemal Ahmed at CGIAR",
+    "group": {
+      "core": "Core workflow",
+      "analysis": "Analysis",
+      "planning": "Planning",
+      "learning": "Learning"
+    },
+    "items": {
+      "projects": "Projects",
+      "dashboard": "Dashboard",
+      "advisory": "Advisories",
+      "evidence": "Evidence Cloud",
+      "diagnosis": "Landscape Diagnosis",
+      "climate": "Climate Futures",
+      "syndromes": "Syndromes",
+      "pathways": "Regeneration Pathways",
+      "investment": "Investment Passports",
+      "monitoring": "Monitoring",
+      "tradeoffs": "Tradeoff Radar",
+      "policy": "Policy Alignment",
+      "community": "Community Intelligence",
+      "knowledge": "Knowledge Base",
+      "map": "Spatial Map",
+      "omoGhibe": "Omo-Ghibe Living Lab",
+      "setup": "New Project",
+      "export": "Export Report",
+      "climateData": "Climate Data",
+      "mcpTools": "MCP Tools",
+      "agronomy": "Agronomy",
+      "rangeland": "Rangeland"
+    }
+  },
+  "locale": {
+    "switcherLabel": "Language",
+    "label": {
+      "en": "English",
+      "am": "አማርኛ (Amharic)",
+      "om": "Afaan Oromoo (Oromo)"
+    }
+  },
+  "map": {
+    "leafletRegion": "Interactive landscape map",
+    "legend": "Map layer legend",
+    "bottomSheet": {
+      "handle": "Expand or collapse zone detail panel",
+      "expandCollapse": "Expand or collapse zone detail panel"
+    },
+    "zoneDetail": "Zone detail",
+    "layers": {
+      "lhii": "LHII",
+      "syndrome": "Syndrome",
+      "ndvi": "NDVI",
+      "erosion": "Erosion",
+      "rainfall": "Rainfall"
+    },
+    "ndviYear": "NDVI Year",
+    "exportGeoTiff": "Export GeoTIFF",
+    "multiSelectHint": "Shift-click zones to compare aggregate stats",
+    "aggregateStats": "Aggregate Indicators",
+    "aggregateZones": "Selected Zones",
+    "clearSelection": "Clear Selection",
+    "ndviSimulated": "NDVI trend simulated from 2023 Sentinel-2 anchor",
+    "ndviSlider": "NDVI year slider"
+  },
+  "chart": {
+    "dataTable": "{title} data table",
+    "dataTableCaption": "Data values for accessibility",
+    "ariaLabel": "{title} — {summary}"
+  },
+  "common": {
+    "loading": "Loading…",
+    "error": "Something went wrong",
+    "errorDetail": "The data could not be loaded. Please reload the page or check your connection.",
+    "reload": "Reload Page",
+    "noData": "No data available",
+    "noDataDetail": "This section cannot be displayed because the source data has not loaded.",
+    "online": "Online",
+    "offline": "Offline",
+    "apiOnline": "API Online · {routes} routes",
+    "apiOffline": "API Offline",
+    "apiConnecting": "Connecting…",
+    "openOmoGhibe": "Open Omo-Ghibe",
+    "newProject": "New Project",
+    "exportReport": "Export Report"
+  },
+  "dashboard": {
+    "title": "LIRA-AI",
+    "subtitle": "Landscape Intelligence for Regeneration and Adaptation",
+    "tagline": "Predictive intelligence for investable landscape regeneration · CGIAR MFL, CASP · Ethiopia",
+    "centralShift": {
+      "heading": "The Central Shift",
+      "from": "\"Where is degradation happening?\"",
+      "to": "\"Why is the landscape degrading, what will happen next under climate change, what restoration pathway is most robust, who benefits or loses, and which actions should be financed first?\"",
+      "arrow": "→"
+    },
+    "pipeline": {
+      "heading": "Analysis Pipeline",
+      "hint": "Click to open each module"
+    },
+    "agentRoster": {
+      "heading": "Agent Roster",
+      "empty": "Start backend to see agents"
+    },
+    "system": {
+      "heading": "System",
+      "apiRoutes": "API routes",
+      "pythonFiles": "Python files",
+      "tests": "Tests",
+      "epsg": "EPSG"
+    },
+    "basin": {
+      "heading": "Omo-Ghibe Basin — Real Data (7/7 sources confirmed)",
+      "openLab": "Open Living Lab"
+    },
+    "dataSources": {
+      "heading": "Data Sources — All Real",
+      "cmip6Link": "CMIP6 + GARDIAN →"
+    }
+  },
+  "advisory": {
+    "title": "Community Advisory",
+    "zone": "Zone",
+    "syndrome": "Degradation Syndrome",
+    "priority": "Priority Action",
+    "confidence": "Confidence",
+    "loading": "Loading community advisory…",
+    "error": "Advisory could not be loaded. Check your connection and reload.",
+    "empty": "No advisory available for this zone.",
+    "emptyDetail": "Select a zone to view the community advisory.",
+    "generateButton": "Generate Advisory",
+    "downloadButton": "Download Advisory Card"
+  },
+  "omo": {
+    "title": "Omo-Ghibe Living Lab",
+    "zones": {
+      "highland": "Kafa-Sheka Highland",
+      "midland": "Dawro-Wolayita Midland",
+      "lowland": "South Omo Lowland",
+      "riverine": "Omo River Corridor"
+    },
+    "syndromes": {
+      "deforestation": "Deforestation",
+      "erosionProductivity": "Erosion-Productivity Loss",
+      "rangelandOvergrazing": "Rangeland Overgrazing",
+      "reservoirSedimentation": "Reservoir Sedimentation"
+    },
+    "indicators": {
+      "ndvi": "NDVI",
+      "soc": "SOC",
+      "rainfall": "Rainfall"
+    }
+  },
+  "setup": {
+    "title": "New Project",
+    "zonePlaceholder": "Select a zone",
+    "submitButton": "Start Analysis",
+    "loading": "Setting up project…",
+    "error": "Project could not be created. Please try again."
+  },
+  "export": {
+    "pdfSectionHeading": "PDF Documents",
+    "advisoryCardTitle": "Community Advisory Card",
+    "advisoryCardDescription": "A5 bilingual card for field facilitators and farmers. Prints in colour or black-and-white.",
+    "downloadAdvisoryCard": "Download Advisory Card",
+    "policyBriefTitle": "Policy Brief",
+    "policyBriefDescription": "A4 formal brief for Ethiopian ministry officials (MoA, MoWIE, MoEFCC). CGIAR branding.",
+    "downloadPolicyBrief": "Download Policy Brief",
+    "investmentPassportTitle": "Investment Passport",
+    "investmentPassportDescription": "A4 GCF concept note format for development finance officers (GCF, LDCF, AF).",
+    "downloadInvestmentPassport": "Download Investment Passport",
+    "generatingPdf": "Generating PDF…",
+    "pdfError": "PDF could not be generated. Check your connection and try again.",
+    "pdfNoData": "No data available to export. Generate the analysis first.",
+    "noProjectHeading": "No analysis loaded",
+    "noProjectBody": "Run the analysis pipeline first, then return here to download your PDF documents."
+  }
+}

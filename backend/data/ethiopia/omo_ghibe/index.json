@@ -1,0 +1,77 @@
+{
+  "basin": "Omo-Ghibe River Basin",
+  "country": "Ethiopia",
+  "lira_ai_use": "MFL Living Lab \u2014 primary Ethiopia pilot landscape",
+  "bbox_basin": [
+    33.0,
+    3.0,
+    42.0,
+    10.0
+  ],
+  "generated_at": "2026-05-08T14:06:31.534066",
+  "version": "v3 \u2014 all real data",
+  "zones": {
+    "highland": {
+      "zone_name": "Kafa-Sheka Highland Zone",
+      "file": "indicators_highland.json",
+      "bbox": [
+        35.5,
+        6.8,
+        37.2,
+        9.0
+      ],
+      "area_ha": 1200000,
+      "dominant_syndrome": "deforestation_vegetation_loss",
+      "real_data_layers": 7
+    },
+    "midland": {
+      "zone_name": "Mid-Elevation Mixed Zone (Dawro-Wolayita)",
+      "file": "indicators_midland.json",
+      "bbox": [
+        37.0,
+        6.0,
+        38.8,
+        7.8
+      ],
+      "area_ha": 2100000,
+      "dominant_syndrome": "erosion_productivity_decline",
+      "real_data_layers": 7
+    },
+    "lowland_pastoral": {
+      "zone_name": "Lowland Agropastoral Zone (South Omo)",
+      "file": "indicators_lowland_pastoral.json",
+      "bbox": [
+        35.5,
+        3.5,
+        38.8,
+        6.2
+      ],
+      "area_ha": 2800000,
+      "dominant_syndrome": "rangeland_overgrazing",
+      "real_data_layers": 7
+    },
+    "riverine": {
+      "zone_name": "Omo River Corridor and Floodplain",
+      "file": "indicators_riverine.json",
+      "bbox": [
+        36.0,
+        4.0,
+        38.0,
+        5.5
+      ],
+      "area_ha": 450000,
+      "dominant_syndrome": "reservoir_sedimentation",
+      "real_data_layers": 7
+    }
+  },
+  "data_sources": {
+    "sentinel2": "sentinel-2-l2a \u2014 Microsoft Planetary Computer (EPSG:32637, rescale=False)",
+    "dem": "cop-dem-glo-30 \u2014 Microsoft Planetary Computer (EPSG:32637)",
+    "worldcover": "esa-worldcover \u2014 Microsoft Planetary Computer (assets=['map'])",
+    "modis": "modis-13Q1-061 \u2014 Microsoft Planetary Computer (EPSG:32637)",
+    "soilgrids": "SoilGrids v2.0 \u2014 ISRIC REST API",
+    "chirps": "CHIRPS v2.0 \u2014 CHC UCSB /vsicurl/ rasterio",
+    "era5": "ERA5-Land \u2014 Open-Meteo historical API",
+    "cmip6": "nasa-nex-gddp-cmip6 \u2014 Microsoft Planetary Computer"
+  }
+}

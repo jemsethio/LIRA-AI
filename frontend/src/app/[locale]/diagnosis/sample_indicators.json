@@ -1,0 +1,25 @@
+{
+  "indicators": {
+    "project_id": "MOCK-ETH-001",
+    "soil_loss_rate_t_ha_yr": 32.5,
+    "soil_moisture_pct": 38,
+    "soil_organic_carbon_g_per_kg": 14.2,
+    "soil_texture": "clay-loam",
+    "land_productivity_index": 0.31,
+    "ndvi_mean": 0.28,
+    "evi_mean": 0.22,
+    "ndvi_trend_5yr": -0.03,
+    "slope_mean_degrees": 18,
+    "flow_accumulation": 1250,
+    "land_cover_change_pct_10yr": 15.4,
+    "forest_cover_pct": 8.2,
+    "bare_soil_pct": 22.1,
+    "rainfall_mm_annual": 680,
+    "temperature_mean_c": 19.5,
+    "dry_spell_days_per_year": 45,
+    "drought_frequency_per_decade": 3,
+    "overgrazing_proxy": 0.68,
+    "reservoir_sedimentation_proxy": 0.55,
+    "is_mock": true
+  }
+}

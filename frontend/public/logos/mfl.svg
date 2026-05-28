@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 70" width="220" height="70">
+  <!-- Alliance Bioversity International - CIAT Addis Ababa, Ethiopia logo -->
+  <!-- Stylised landscape icon -->
+  <g transform="translate(2,10)">
+    <polygon points="18,46 32,20 46,46" fill="none" stroke="#6CC04A" stroke-width="2.2" stroke-linejoin="round"/>
+    <polygon points="34,46 50,28 66,46" fill="none" stroke="#4A9D3A" stroke-width="2.2" stroke-linejoin="round"/>
+    <circle cx="56" cy="16" r="5" fill="#F7941D"/>
+  </g>
+  <!-- Label -->
+  <text x="76" y="28" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="rgba(255,255,255,0.55)" letter-spacing="1.5">CGIAR</text>
+  <text x="76" y="44" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="800" fill="#6CC04A" letter-spacing="-0.2">Multifunctional</text>
+  <text x="76" y="59" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="800" fill="#6CC04A" letter-spacing="-0.2">Landscapes SP</text>
+</svg>

@@ -1,0 +1,169 @@
+---
+# LIRA-AI Degradation Syndrome Definitions
+
+syndromes:
+
+  erosion_productivity_decline:
+    name: Erosion–Productivity Decline Syndrome
+    triggering_indicators:
+      - soil_loss_rate >= moderate
+      - land_productivity_index <= low
+    main_symptoms:
+      - High topsoil loss rates
+      - Declining crop yields
+      - Rill and gully formation
+      - Exposed subsoil and rock
+    likely_drivers:
+      - Steep slopes with low cover
+      - Seasonal high-intensity rainfall
+      - Removal of terraces or vegetation
+      - Continuous cultivation without fallows
+    risk_level: high
+    default_confidence: medium
+    suggested_validation:
+      - Measure rill density in field transects
+      - Check historical yield trend data
+      - Assess terrace condition
+
+  moisture_stress:
+    name: Moisture-Stress Syndrome
+    triggering_indicators:
+      - soil_moisture_pct <= limiting
+      - ndvi <= sparse
+    main_symptoms:
+      - Seasonal crop failure
+      - Reduced dry-season vegetation
+      - Increased livestock mortality in dry season
+    likely_drivers:
+      - Declining rainfall or erratic dry spells
+      - Loss of soil water-holding capacity
+      - Deforestation reducing ET recycling
+      - Shallow soils with low retention
+    risk_level: high
+    default_confidence: medium
+    suggested_validation:
+      - Soil texture and depth measurements
+      - Seasonal streamflow observations
+      - Farmer calendars of drought years
+
+  soil_carbon_depletion:
+    name: Soil Carbon Depletion Syndrome
+    triggering_indicators:
+      - soil_organic_carbon_g_per_kg <= low
+      - land_productivity_index <= moderate_low
+    main_symptoms:
+      - Low soil organic matter
+      - Reduced soil water retention
+      - Declining biological activity
+      - Poor aggregate stability
+    likely_drivers:
+      - Continuous burning of crop residues
+      - Intensive tillage without organic inputs
+      - Overgrazing removing organic matter inputs
+    risk_level: medium
+    default_confidence: medium
+    suggested_validation:
+      - Laboratory SOC measurements at 0–20 cm
+      - Residue management survey
+
+  rangeland_overgrazing:
+    name: Rangeland/Overgrazing Syndrome
+    triggering_indicators:
+      - ndvi <= degraded
+      - overgrazing_proxy >= high
+    main_symptoms:
+      - Reduced perennial grass cover
+      - Bush encroachment replacing grasses
+      - Compacted bare soil patches
+      - Declining livestock body condition
+    likely_drivers:
+      - Livestock numbers exceeding carrying capacity
+      - Loss of seasonal mobility
+      - Breakdown of communal grazing rules
+    risk_level: high
+    default_confidence: low
+    data_gaps:
+      - Carrying capacity estimates needed
+      - Livestock census data required
+    suggested_validation:
+      - Basal cover transects
+      - Species composition survey
+      - Community livestock count
+
+  deforestation_vegetation_loss:
+    name: Deforestation/Vegetation-Loss Syndrome
+    triggering_indicators:
+      - ndvi <= degraded
+      - land_cover_change_risk >= high
+    main_symptoms:
+      - Declining tree and shrub cover
+      - Expanding agricultural land into forest margins
+      - Loss of shade, fodder, and fuelwood species
+    likely_drivers:
+      - Agricultural expansion pressure
+      - Charcoal production
+      - Fuelwood demand
+      - Weak forest governance
+    risk_level: high
+    default_confidence: medium
+    suggested_validation:
+      - Land cover change detection (Landsat/Sentinel time series)
+      - Community memory mapping
+
+  invasive_woody_encroachment:
+    name: Invasive Species/Woody Encroachment Syndrome
+    triggering_indicators:
+      - ndvi >= moderate
+      - land_productivity_index <= low
+    main_symptoms:
+      - Dense Prosopis or other invasive shrub cover
+      - Reduced grass layer
+      - Blocked water access points
+      - Increased fire risk
+    likely_drivers:
+      - Historical disturbance enabling establishment
+      - Lack of control measures
+      - Seed dispersal by livestock
+    risk_level: medium
+    default_confidence: low
+    data_gaps:
+      - Species mapping required
+    suggested_validation:
+      - Invasive species cover assessment
+      - Seedbank survey
+
+  reservoir_sedimentation:
+    name: Reservoir Sedimentation Syndrome
+    triggering_indicators:
+      - soil_loss_rate >= severe
+      - slope_dominant >= steep
+    main_symptoms:
+      - Reduced reservoir storage capacity
+      - Increased turbidity and silting
+      - Shortened irrigation season
+    likely_drivers:
+      - Severe erosion in catchment
+      - Lack of upstream vegetation cover
+      - Stream channel incision
+    risk_level: high
+    default_confidence: low
+    data_gaps:
+      - Reservoir bathymetric survey required
+    suggested_validation:
+      - Sediment load measurements
+      - Upstream erosion mapping
+
+  mixed_high_risk:
+    name: Mixed High-Risk Syndrome
+    triggering_indicators:
+      - multiple_severe_indicators >= 3
+    main_symptoms:
+      - Multiple overlapping degradation processes
+      - Compound risk to livelihoods and ecosystem services
+    likely_drivers:
+      - Systemic pressure across land uses
+      - Climate stress amplifying existing degradation
+    risk_level: very_high
+    default_confidence: medium
+    suggested_validation:
+      - Comprehensive baseline assessment recommended

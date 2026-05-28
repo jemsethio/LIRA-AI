@@ -1,0 +1,61 @@
+---
+# LIRA-AI Diagnostic Thresholds — configurable without code changes
+
+soil_loss_rate:
+  very_low:   { max: 2 }
+  low:        { min: 2,  max: 10 }
+  moderate:   { min: 10, max: 20 }
+  severe:     { min: 20, max: 50 }
+  very_severe: { min: 50 }
+
+soil_moisture_pct:
+  deficit:    { max: 29 }
+  limiting:   { min: 30, max: 59 }
+  adequate:   { min: 60, max: 100 }
+  surplus:    { min: 100 }
+
+soil_organic_carbon_g_per_kg:
+  very_low:   { max: 10 }
+  low:        { min: 10, max: 20 }
+  moderate:   { min: 20, max: 50 }
+  high:       { min: 50 }
+
+land_productivity_index:
+  very_low:       { max: 0.2 }
+  low:            { min: 0.2, max: 0.4 }
+  moderate_low:   { min: 0.4, max: 0.6 }
+  moderately_high: { min: 0.6, max: 0.8 }
+  high:           { min: 0.8, max: 1.0 }
+
+ndvi:
+  severe_degradation: { max: 0.1 }
+  degraded:           { min: 0.1, max: 0.25 }
+  sparse:             { min: 0.25, max: 0.4 }
+  moderate:           { min: 0.4, max: 0.6 }
+  healthy:            { min: 0.6 }
+
+slope_degrees:
+  flat:          { max: 2 }
+  gentle:        { min: 2,  max: 8 }
+  moderate:      { min: 8,  max: 15 }
+  steep:         { min: 15, max: 30 }
+  very_steep:    { min: 30 }
+
+rainfall_mm_annual:
+  arid:          { max: 250 }
+  semi_arid:     { min: 250, max: 500 }
+  sub_humid:     { min: 500, max: 900 }
+  humid:         { min: 900 }
+
+# Priority Index weights (must sum to 1.0; all configurable)
+priority_index_weights:
+  current_degradation_severity: 0.20
+  future_climate_risk:          0.20
+  ecosystem_service_value:      0.10
+  livelihood_exposure:          0.10
+  community_priority:           0.10
+  policy_alignment:             0.10
+  investment_readiness:         0.10
+  equity_benefit:               0.05
+  maladaptation_risk:          -0.10   # subtracted
+  implementation_barriers:     -0.05   # subtracted
