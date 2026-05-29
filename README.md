@@ -13,7 +13,6 @@
 [![GitHub](https://img.shields.io/badge/GitHub-jemsethio/LIRA--AI-blue?logo=github)](https://github.com/jemsethio/LIRA-AI)
 
 ---
-
 ## The Central Shift
 
 ```
@@ -23,6 +22,20 @@ To:    "Why is the landscape degrading, what will happen next under climate chan
         what restoration pathway is most robust, who benefits or loses,
         and which actions should be financed first?"
 ```
+---
+
+<p align="center">
+  <img src="lira-ai-dashboard.jpeg" alt="LIRA-AI Dashboard" width="100%">
+</p>
+
+<h3 align="center">LIRA-AI Dashboard</h4>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/AI-Multi--Agent%20System-blue" alt="AI Multi-Agent System">
+  <img src="https://img.shields.io/badge/Geospatial-Decision%20Intelligence-green" alt="Geospatial Decision Intelligence">
+  <img src="https://img.shields.io/badge/Climate-Resilience-orange" alt="Climate Resilience">
+  <img src="https://img.shields.io/badge/Status-Prototype-lightgrey" alt="Prototype Status">
+</p>
 
 ---
 
